@@ -1,6 +1,9 @@
 const root = new Vue({
     el:`#root`,
     data:{
+        newItems : { text:``,
+            done:``,
+        },
         Items : [
             {
                 text:`comprare una ferrari`,
@@ -27,8 +30,11 @@ const root = new Vue({
     methods:{
         deleteItems(index){
             this.Items.splice(index,1);
+        },
+        addItems(){
+            this.Items.push(newItems);
+           
         }
-
     }
 
 })
