@@ -32,7 +32,7 @@ const root = new Vue({
         addItems(){
            let addedItems = {text: this.newItems ,done : false}
             this.Items.push(addedItems);
-            
+            this.newItems = ``;
         }
     }
 
