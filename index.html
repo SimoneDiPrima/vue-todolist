@@ -22,7 +22,7 @@
                 </ul>
             </div>
             <div class="d-flex flex-column offset-3 col-6">
-                <input type="text" v-model = "newItems">
+                <input type="text" v-model = "newItems"  @keyup.enter ="addItems">
                 <Button class="offset-3 col-6 btn btn-warning mt-3 text-white" @click="addItems">aggiungi un nuovo sogno alla tua lista</button>
             </div>
         </div>
